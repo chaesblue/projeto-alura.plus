@@ -3,7 +3,8 @@
     --cor-secundaria-texto: #c0c0c0;
     --cor-botão: #167bf7;
     --cor-fundo: #00030C;
-    --font-principal: 'Inter'
+    --font-principal: 'Inter';
+    --botao-azul-efeito: rgb(8, 73, 151);
 }
 
 * {
@@ -43,6 +44,10 @@ body {
     display: block;
     margin-bottom: 1em ;
 
+}
+
+.container__botao:hover{
+    background-color: var(--botao-azul-efeito);
 }
 
 .botao_secundario {
@@ -86,4 +91,78 @@ body {
 
 .descricao__texto{
     color: var(--cor-secundaria-texto);
+}
+
+.secundario__botao{
+    display: inline-block;
+    margin-top: 1em
+}
+.container__descricao{
+    padding: 2em;
+}
+
+.dispositivo__lista{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5em;
+    list-style-type: none;
+}
+
+.dispositivo{
+    text-align: center;
+}
+
+.dispositivo__titulo{
+    font-size: 48px;
+    color: var(--cor-texto);
+    margin-bottom: 1em;
+}
+
+.lista__item{
+    font-size: 32px;
+    color: var(--cor-texto);
+}
+
+.rodape{
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 5em 3em;
+}
+
+.rodape__lista{
+
+    justify-content: center;
+    display: flex;
+    list-style-type: none;
+    margin-top: 1em;
+    
+}
+
+.lista__link a{
+    text-decoration: none;
+    color: var(--cor-texto);
+    margin-left: 1em;
+    
+
+
+}
+
+.lista__link a:hover{
+    color: var(--cor-botão);
+}
+
+
+.lista__link a:active{
+    color: var(--cor-secundaria-texto);
+}
+
+.rodape__texto{
+    font-size: 14px;
+    margin: 1em 0;
+    color: var(--cor--texto);
+    
+}
+
+.rodape__logo{
+    margin: 2em 0;
 }
